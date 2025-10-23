@@ -1,12 +1,16 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 using WorkExperienceOct2024.Server.Interfaces;
 using WorkExperienceOct2024.Server.Models;
 
 namespace WorkExperienceOct2024.Server.Services;
 
+// this class is the glue between our ASP.NET Core backend and the Alpha Vantage HTTP api
+// Program.cs only knows about the IStocksProvider abstraction, and dependency injection
+// hands this implementation in whenever a request hits the /api endpoints
 public sealed class AlphaVantageService : IStocksProvider
 {
-    private const string KEY = "1003M336WQ3A9BW7"; // your key
+    // keeping the key here for now so the sample runs, but normally you'd read from config
+    private const string KEY = "1003M336WQ3A9BW7";
     private readonly IHttpClientFactory _httpFactory;
 
     public AlphaVantageService(IHttpClientFactory httpFactory)
@@ -15,6 +19,8 @@ public sealed class AlphaVantageService : IStocksProvider
     }
 
     // ---------- QUOTE ----------
+    // when the front-end asks for /api/stocks/quote/{symbol} the minimal api routes call this
+    // we call Alpha Vantage, massage the json into our QuoteDto shape, and send it back up the stack
     public async Task<QuoteDto> GetQuoteAsync(string symbol, CancellationToken ct = default)
     {
         var http = _httpFactory.CreateClient("alphavantage");
@@ -24,9 +30,12 @@ public sealed class AlphaVantageService : IStocksProvider
 
         using var doc = await JsonDocument.ParseAsync(await res.Content.ReadAsStreamAsync(ct), cancellationToken: ct);
         if (!doc.RootElement.TryGetProperty("Global Quote", out var obj))
+        {
+            // if AV doesn't send the property we expect, we fail fast so the UI can show an error
             throw new InvalidOperationException("Alpha Vantage response missing 'Global Quote'");
+        }
 
-        // helpers
+        // helpers to keep the parsing noise tidy and easy to read later
         decimal Dec(string name) =>
             obj.TryGetProperty(name, out var v) && decimal.TryParse(v.GetString(), out var d) ? d : 0m;
 
@@ -62,6 +71,7 @@ public sealed class AlphaVantageService : IStocksProvider
     }
 
     // ---------- GOLD (XAU/USD) ----------
+    // similar story for the gold endpoint: the minimal api route delegates to here
     public async Task<GoldPriceDto> GetFxPriceAsync(string from, string to, CancellationToken ct = default)
     {
         var http = _httpFactory.CreateClient("alphavantage");
@@ -72,10 +82,9 @@ public sealed class AlphaVantageService : IStocksProvider
         using var doc = await JsonDocument.ParseAsync(await res.Content.ReadAsStreamAsync(ct), cancellationToken: ct);
         var root = doc.RootElement;
 
-        // ✅ Handle rate limit / errors gracefully
+        // Alpha Vantage can throttle or error by returning Note / Information / Error Message blocks
         if (!root.TryGetProperty("Realtime Currency Exchange Rate", out var fx))
         {
-            // Alpha Vantage returns Note / Information / Error Message when throttled or bad params
             string msg =
                 (root.TryGetProperty("Note", out var note) ? note.GetString() : null) ??
                 (root.TryGetProperty("Information", out var info) ? info.GetString() : null) ??
@@ -92,12 +101,10 @@ public sealed class AlphaVantageService : IStocksProvider
 
         var pair = $"{from}/{to}";
         var price = Dec(fx, "5. Exchange Rate");
-        var bid = Dec(fx, "8. Bid Price");  // may be 0 if AV doesn't send it
-        var ask = Dec(fx, "9. Ask Price");  // may be 0 if AV doesn't send it
+        var bid = Dec(fx, "8. Bid Price");  // these can legitimately be zero depending on the feed
+        var ask = Dec(fx, "9. Ask Price");
         var last = Str(fx, "6. Last Refreshed") ?? "";
 
         return new GoldPriceDto(pair, price, bid, ask, last, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds());
     }
-
 }
-

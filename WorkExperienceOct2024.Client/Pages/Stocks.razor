@@ -1,10 +1,10 @@
-﻿@page "/stocks"
+@page "/stocks"
 @using WorkExperienceOct2024.Client.Core.Services
 @inject StocksService Api
 @inject MarketService Market
 
-
-
+<!-- this page is the bridge between the wasm ui and our two tiny http services -->
+<!-- clicking the buttons below calls into StocksService / MarketService which then hit the server -->
 <h3>Stocks</h3>
 <input class="form-control" @bind="symbol" placeholder="AAPL" />
 <button class="btn btn-primary mt-2" @onclick="Load">Get Quote</button>
@@ -42,12 +42,13 @@
     // Stocks
     string symbol = "AAPL";
     StocksService.QuoteDto? q;
+
+    // the Api field is DI-injected and wraps the server's /api/stocks/quote/{symbol}
     async Task Load() => q = await Api.GetQuoteAsync(symbol.Trim().ToUpperInvariant());
 
     // Gold
     MarketService.GoldPriceDto? gold;
+
+    // Market wraps the /api/market/gold/price endpoint on the server
     async Task LoadGold() => gold = await Market.GetGoldPriceAsync();
 }
-
-
-
