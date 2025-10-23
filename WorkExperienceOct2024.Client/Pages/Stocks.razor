@@ -1,15 +1,19 @@
-﻿@page "/stocks"
+@page "/stocks"
 @using WorkExperienceOct2024.Client.Core.Services
 @inject StocksService Api
 @inject MarketService Market
 
-
-
 <h3>Stocks</h3>
 <input class="form-control" @bind="symbol" placeholder="AAPL" />
-<button class="btn btn-primary mt-2" @onclick="Load">Get Quote</button>
+<button class="btn btn-primary mt-2" @onclick="Load" disabled="@isQuoteLoading">
+    @(isQuoteLoading ? "Loading..." : "Get Quote")
+</button>
 
-@if (q is not null)
+@if (!string.IsNullOrWhiteSpace(quoteError))
+{
+    <div class="alert alert-warning mt-3" role="alert">@quoteError</div>
+}
+else if (q is not null)
 {
     <div class="card p-3 mt-3">
         <div><b>@q.Symbol</b></div>
@@ -22,9 +26,15 @@
 <hr class="my-4" />
 
 <h3>Gold (XAU/USD)</h3>
-<button class="btn btn-secondary" @onclick="LoadGold">Get Gold Price</button>
+<button class="btn btn-secondary" @onclick="LoadGold" disabled="@isGoldLoading">
+    @(isGoldLoading ? "Loading..." : "Get Gold Price")
+</button>
 
-@if (gold is not null)
+@if (!string.IsNullOrWhiteSpace(goldError))
+{
+    <div class="alert alert-warning mt-3" role="alert">@goldError</div>
+}
+else if (gold is not null)
 {
     <div class="card p-3 mt-3">
         <div><b>@gold.Pair</b></div>
@@ -42,12 +52,65 @@
     // Stocks
     string symbol = "AAPL";
     StocksService.QuoteDto? q;
-    async Task Load() => q = await Api.GetQuoteAsync(symbol.Trim().ToUpperInvariant());
+    string? quoteError;
+    bool isQuoteLoading;
+
+    async Task Load()
+    {
+        var trimmed = symbol.Trim().ToUpperInvariant();
+        quoteError = null;
+        q = null;
+
+        if (string.IsNullOrWhiteSpace(trimmed))
+        {
+            quoteError = "Please enter a stock symbol.";
+            return;
+        }
+
+        isQuoteLoading = true;
+        try
+        {
+            var result = await Api.GetQuoteAsync(trimmed);
+            if (result.IsSuccess && result.Data is not null)
+            {
+                q = result.Data;
+            }
+            else
+            {
+                quoteError = result.Error;
+            }
+        }
+        finally
+        {
+            isQuoteLoading = false;
+        }
+    }
 
     // Gold
     MarketService.GoldPriceDto? gold;
-    async Task LoadGold() => gold = await Market.GetGoldPriceAsync();
+    string? goldError;
+    bool isGoldLoading;
+
+    async Task LoadGold()
+    {
+        goldError = null;
+        gold = null;
+        isGoldLoading = true;
+        try
+        {
+            var result = await Market.GetGoldPriceAsync();
+            if (result.IsSuccess && result.Data is not null)
+            {
+                gold = result.Data;
+            }
+            else
+            {
+                goldError = result.Error;
+            }
+        }
+        finally
+        {
+            isGoldLoading = false;
+        }
+    }
 }
-
-
-
