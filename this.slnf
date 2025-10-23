@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "WorkExperienceOct2024.sln",
+    "projects": [
+      "WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj",
+      "WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj"
+    ]
+  }
+}
