@@ -1,10 +1,11 @@
-﻿namespace WorkExperienceOct2024.Client.Core.Services;
-
 using System.Net.Http.Json;
 
+namespace WorkExperienceOct2024.Client.Core.Services;
+
+// exactly like StocksService but for the gold endpoint
+// the DTO is intentionally a clone of the server record so serialization is painless
 public sealed class MarketService(HttpClient http)
 {
-    // This shape must match what the server returns!
     public record GoldPriceDto(
         string Pair,
         decimal Price,
@@ -14,7 +15,7 @@ public sealed class MarketService(HttpClient http)
         long TsUnixMs
     );
 
-    public Task<GoldPriceDto?> GetGoldPriceAsync(CancellationToken ct = default)
-        => http.GetFromJsonAsync<GoldPriceDto>("/api/market/gold/price", ct);
+    // simple pass-through call to the backend API
+    public Task<GoldPriceDto?> GetGoldPriceAsync(CancellationToken ct = default) =>
+        http.GetFromJsonAsync<GoldPriceDto>("/api/market/gold/price", ct);
 }
-
