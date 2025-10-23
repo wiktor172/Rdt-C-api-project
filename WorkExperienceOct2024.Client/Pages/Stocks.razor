@@ -1,0 +1,53 @@
+﻿@page "/stocks"
+@using WorkExperienceOct2024.Client.Core.Services
+@inject StocksService Api
+@inject MarketService Market
+
+
+
+<h3>Stocks</h3>
+<input class="form-control" @bind="symbol" placeholder="AAPL" />
+<button class="btn btn-primary mt-2" @onclick="Load">Get Quote</button>
+
+@if (q is not null)
+{
+    <div class="card p-3 mt-3">
+        <div><b>@q.Symbol</b></div>
+        <div>Price: @q.Price.ToString("F2")</div>
+        <div>Δ: @q.Change.ToString("F2") (@q.ChangePercent.ToString("F2")%)</div>
+        <div>At: @DateTimeOffset.FromUnixTimeMilliseconds(q.TsUnixMs).ToLocalTime()</div>
+    </div>
+}
+
+<hr class="my-4" />
+
+<h3>Gold (XAU/USD)</h3>
+<button class="btn btn-secondary" @onclick="LoadGold">Get Gold Price</button>
+
+@if (gold is not null)
+{
+    <div class="card p-3 mt-3">
+        <div><b>@gold.Pair</b></div>
+        <div>Price: @gold.Price.ToString("F2") USD/oz</div>
+        @if (gold.Bid != 0 || gold.Ask != 0)
+        {
+            <div>Bid: @gold.Bid.ToString("F2") • Ask: @gold.Ask.ToString("F2")</div>
+        }
+        <div>Last Refreshed: @gold.LastRefreshed</div>
+        <div>Fetched At: @DateTimeOffset.FromUnixTimeMilliseconds(gold.TsUnixMs).ToLocalTime()</div>
+    </div>
+}
+
+@code {
+    // Stocks
+    string symbol = "AAPL";
+    StocksService.QuoteDto? q;
+    async Task Load() => q = await Api.GetQuoteAsync(symbol.Trim().ToUpperInvariant());
+
+    // Gold
+    MarketService.GoldPriceDto? gold;
+    async Task LoadGold() => gold = await Market.GetGoldPriceAsync();
+}
+
+
+

@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\services\\alphavantageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\services\\alphavantageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\interfaces\\istocksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\interfaces\\istocksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\models\\goldpricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\models\\goldpricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\models\\qutoedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\models\\qutoedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\core\\services\\stocksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\core\\services\\stocksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\pages\\stocks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\pages\\stocks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\core\\services\\marketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\core\\services\\marketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2B0C355-1145-4EC9-A065-D4EC887CCD9A}|WorkExperienceOct2024.Client\\WorkExperienceOct2024.Client.csproj|solutionrelative:workexperienceoct2024.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\workexperienceoct2024.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\workexperienceoct2024.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|c:\\users\\wwardziak\\source\\repos\\workexperience\\workexperienceoct2024\\workexperienceoct2024.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DD3AAAF-5BD6-4CC7-85A5-4DBFF8D7D1B2}|WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj|solutionrelative:workexperienceoct2024.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 233,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Program.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Program.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:45:49.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlphaVantageService.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Services\\AlphaVantageService.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Services\\AlphaVantageService.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Services\\AlphaVantageService.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Services\\AlphaVantageService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:22:31.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoldPriceDto.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Models\\GoldPriceDto.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Models\\GoldPriceDto.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Models\\GoldPriceDto.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Models\\GoldPriceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T13:14:30.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Program.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Program.cs*",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T09:06:25.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStocksProvider.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Interfaces\\IStocksProvider.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Interfaces\\IStocksProvider.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Interfaces\\IStocksProvider.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Interfaces\\IStocksProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:05:01.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QutoeDto.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Models\\QutoeDto.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Models\\QutoeDto.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Models\\QutoeDto.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Models\\QutoeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:00:34.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StocksService.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Core\\Services\\StocksService.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Core\\Services\\StocksService.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Core\\Services\\StocksService.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Core\\Services\\StocksService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:45:19.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Stocks.razor",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Pages\\Stocks.razor",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Pages\\Stocks.razor",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Pages\\Stocks.razor",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Pages\\Stocks.razor",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T10:48:10.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\App.razor",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\App.razor",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\App.razor",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T11:08:04.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T11:08:29.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T11:08:30.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MarketService.cs",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Core\\Services\\MarketService.cs",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\Core\\Services\\MarketService.cs",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\Core\\Services\\MarketService.cs",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\Core\\Services\\MarketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T13:27:50.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Client\\_Imports.razor",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Client\\_Imports.razor",
+              "RelativeToolTip": "WorkExperienceOct2024.Client\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T10:58:51.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WorkExperienceOct2024.Server.csproj",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\Source\\Repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj",
+              "ToolTip": "C:\\Users\\wwardziak\\Source\\Repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\WorkExperienceOct2024.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T09:59:19.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\appsettings.json",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T09:06:56.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WorkExperienceOct2024.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\wwardziak\\source\\repos\\WorkExperience\\WorkExperienceOct2024\\WorkExperienceOct2024.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WorkExperienceOct2024.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T09:04:29.965Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

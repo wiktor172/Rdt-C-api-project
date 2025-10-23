@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WorkExperienceOct2024.Server",
+    "version": "1.0"
+  },
+  "paths": {
+    "/harrypotter/characters": {
+      "get": {
+        "tags": [
+          "HarryPotter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/harrypotter/spells": {
+      "get": {
+        "tags": [
+          "HarryPotter"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
